@@ -42,4 +42,4 @@ add_dependencies( RetirementCalcTest RetirementCalcLib )
 
 # Setup our Qt based GUI
 add_subdirectory( RetirementCalcGUI )
-add_dependencies( RetirementCalcGUI LoreiLib )
+add_dependencies( RetirementCalcGUI RetirementCalcLib )
