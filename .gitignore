@@ -1,0 +1,51 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Old Build Directories
+Debug
+RetirementCalcGui/Win32
+RetirementCalcLib/Win32
+RetirementCalcTest/Win32
+RetirementCalcGui/x64
+RetirementCalcLib/x64
+RetirementCalcTest/X64
+
+# New Build Directorys
+Build/
+RetirementCalcGUI/Build
+RetirementCalcLib/Build
+RetirementCalcTest/Build
+
+# Visual Studio Stuff
+*.sdf
+*.opensdf
+*.vcxproj.user
+RetirementCalc.v12.suo
+
+#Nuget Stuff
+packages/
+
+# Kde develop
+*.kdev4
+
+# Dont add test data to server
+TestData
