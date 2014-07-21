@@ -16,7 +16,7 @@ BOOST_AUTO_TEST_CASE(basic_boost_test)
 
 BOOST_AUTO_TEST_CASE( RetirementCalc_Lib_Link )
 {
-	BOOST_CHECK_EQUAL( RetirementCalc::ProgramName(), "RetirementCalc" );
+	BOOST_CHECK_EQUAL( RetirementCalc::ProgramName(), "GregoryLandsRetirementCalc" );
 }
 //KeepAtEndOfFile//////////////////////////////////////////////////////////////////////////////////////////////////
 BOOST_AUTO_TEST_SUITE_END();

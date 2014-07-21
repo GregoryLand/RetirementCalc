@@ -9,7 +9,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RetirementCalcGUI", "Retire
 		{E344C65F-9EE4-46CF-8521-85022F7B4657} = {E344C65F-9EE4-46CF-8521-85022F7B4657}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RetirementCalcLib", "RetirementCalcLib\RetirementCalcLib.vcxproj", "{972A9B34-C1EE-4306-B9C6-671B9EF46314}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RetirementCalciLib", "RetirementCalcLib\RetirementCalcLib.vcxproj", "{972A9B34-C1EE-4306-B9C6-671B9EF46314}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RetirementCalcTest", "RetirementCalcTest\RetirementCalcTest.vcxproj", "{E344C65F-9EE4-46CF-8521-85022F7B4657}"
 	ProjectSection(ProjectDependencies) = postProject

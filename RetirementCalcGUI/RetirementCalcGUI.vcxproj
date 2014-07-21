@@ -100,7 +100,7 @@
       <SubSystem>Windows</SubSystem>
     </Link>
     <PostBuildEvent>
-      <Command>$(SolutionDir)\BuildScripts\Windows\RetirementCalcGUIPostBuild.bat $(ConfigurationName) $(ProjectName) $(QTDIR) $(OutDir)</Command>
+      <Command>$(SolutionDir)\BuildScripts\Windows\RetirementCalcGUIPostBuild.bat $(ConfigurationName) $(ProjectName) $(QTDIR) $(OutDir)  $(SolutionDir)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -118,7 +118,7 @@
       <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
-      <Command>$(SolutionDir)\BuildScripts\Windows\RetirementCalcGUIPostBuild.bat $(ConfigurationName) $(ProjectName) $(QTDIR) $(OutDir)</Command>
+      <Command>$(SolutionDir)\BuildScripts\Windows\RetirementCalcGUIPostBuild.bat $(ConfigurationName) $(ProjectName) $(QTDIR) $(OutDir)  $(SolutionDir)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -140,7 +140,7 @@
       <SubSystem>Windows</SubSystem>
     </Link>
     <PostBuildEvent>
-      <Command>$(SolutionDir)\BuildScripts\Windows\RetirementCalcGUIPostBuild.bat $(ConfigurationName) $(ProjectName) $(QTDIR) $(OutDir)</Command>
+      <Command>$(SolutionDir)\BuildScripts\Windows\RetirementCalcGUIPostBuild.bat $(ConfigurationName) $(ProjectName) $(QTDIR) $(OutDir)  $(SolutionDir)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -162,7 +162,7 @@
       <SubSystem>Windows</SubSystem>
     </Link>
     <PostBuildEvent>
-      <Command>$(SolutionDir)\BuildScripts\Windows\RetirementCalcGUIPostBuild.bat $(ConfigurationName) $(ProjectName) $(QTDIR) $(OutDir)</Command>
+      <Command>$(SolutionDir)\BuildScripts\Windows\RetirementCalcGUIPostBuild.bat $(ConfigurationName) $(ProjectName) $(QTDIR) $(OutDir)  $(SolutionDir)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

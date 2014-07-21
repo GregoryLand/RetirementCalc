@@ -14,6 +14,11 @@ set _OUTDIR=%_OUTDIR:"###=%
 set _OUTDIR=%_OUTDIR:###"=%
 set _OUTDIR=%_OUTDIR:###=%
 
+set _SOLUTIONDIR=###%5%###
+set _SOLUTIONDIR=%_SOLUTIONDIR:"###=%
+set _SOLUTIONDIR=%_SOLUTIONDIR:###"=%
+set _SOLUTIONDIR=%_SOLUTIONDIR:###=%
+
 ::echo %_configName%
 ::echo %_projectName%
 ::echo %_QTDIR%
@@ -45,3 +50,4 @@ if %_configName% == Debug (
 	@xcopy /q /y "%_QTDIR%\bin\libGLESv2d.dll" "%_OUTDIR%" > nul
 )
 
+xcopy /q /y /s "%_SOLUTIONDIR%TestData" "%_OUTDIR%"  

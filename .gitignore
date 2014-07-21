@@ -49,3 +49,5 @@ packages/
 
 # Dont add test data to server
 TestData
+dataonjsonobject.txt
+forfun.py
