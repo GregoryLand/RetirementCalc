@@ -58,7 +58,7 @@ namespace RetirementCalc
     //                             : return value of 89 may indicate a capped out value in the lookup table
     // 
     // Throws                      
-    // BadArgumentRamge            : this gets thrown if any of the arguments are out of range
+    // BadArgument                 : this gets thrown if any of the arguments are out of range
     int LookupTable::Lookup( ProfileType profileType, int currentAge, int startingRetirementFunds, int yearlyRetirementSavings, int desiredRetirementIncome )
     {
         // Error Check this stuff 

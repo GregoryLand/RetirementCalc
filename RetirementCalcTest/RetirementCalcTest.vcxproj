@@ -180,7 +180,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Src\BoostTest.cpp" />
-    <ClCompile Include="Src\JsonLoaderTest.cpp" />
+    <ClCompile Include="Src\LookupTableTest.cpp" />
     <ClCompile Include="Src\main.cpp" />
   </ItemGroup>
   <ItemGroup>

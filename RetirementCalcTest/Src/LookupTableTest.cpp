@@ -33,7 +33,7 @@ BOOST_AUTO_TEST_CASE( LookupTable_constructor_failed_to_find_file )
 //                             : return value of 89 may indicate a capped out value in the lookup table
 // 
 // Throws                      
-// BadArgumentRamge            : this gets thrown if any of the arguments are out of range
+// BadArgument                 : this gets thrown if any of the arguments are out of range
 BOOST_AUTO_TEST_CASE( LookupTable_Lookup_method_arg_error_test )
 {
     // Some helpful constants 
