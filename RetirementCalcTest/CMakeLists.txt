@@ -40,7 +40,7 @@ include_directories( ${Boost_INCLUDE_DIRS} )
 include_directories( ../RetirementCalcLib/Src/ )
 
 # Create the Lib
-add_executable( RetirementCalcTest Src/main.cpp ${LOREI_TEST_SOURCES} )
+add_executable( RetirementCalcTest Src/main.cpp ${RetirementCalc_TEST_SOURCES} )
 
 # Link In Boost
 target_link_libraries( RetirementCalcTest ${Boost_LIBRARIES} )
