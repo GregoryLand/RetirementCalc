@@ -24,6 +24,11 @@ set_property( GLOBAL PROPERTY USE_FOLDERS ON )
 # Compiler Flags
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
+# Setup QT5
+set( CMAKE_INCLUDE_CURRENT_DIR ON )
+set( CMAKE_AUTOMOC ON )
+find_package( Qt5Widgets )
+
 # Setup the subproject RetirementCalcLib
 # Setup the Header and Source Variables
 file( GLOB RetirementCalc_LIB_HEADERS
