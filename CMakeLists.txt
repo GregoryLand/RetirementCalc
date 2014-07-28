@@ -27,7 +27,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 # Setup QT5
 set( CMAKE_INCLUDE_CURRENT_DIR ON )
 set( CMAKE_AUTOMOC ON )
-find_package( Qt5Widgets )
+find_package( Qt5Core )
 
 # Setup the subproject RetirementCalcLib
 # Setup the Header and Source Variables
@@ -48,3 +48,6 @@ add_dependencies( RetirementCalcTest RetirementCalcLib )
 # Setup our Qt based GUI
 add_subdirectory( RetirementCalcGUI )
 add_dependencies( RetirementCalcGUI RetirementCalcLib )
+
+#Link in QT 5
+qt5_use_modules( RetirementCalcLib Core )
