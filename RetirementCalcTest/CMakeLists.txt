@@ -23,7 +23,11 @@ file( GLOB RetirementCalc_TEST_HEADERS
 file( GLOB RetirementCalc_TEST_SOURCES 
         "Src/*.cpp" ) 
         
-
+# Setup QT5
+set( CMAKE_INCLUDE_CURRENT_DIR ON )
+set( CMAKE_AUTOMOC ON )
+find_package( Qt5Widgets )
+        
 # Grab Boost
 set( Boost_USE_STATIC_LIBS ON )
 set( Boost_USE_MULTITHREADED ON )
