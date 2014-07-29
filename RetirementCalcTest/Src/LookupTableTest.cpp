@@ -12,12 +12,17 @@ BOOST_AUTO_TEST_SUITE( LookupTable_test );
 /*Constructor tests**********************************************************************************************/
 BOOST_AUTO_TEST_CASE( LookupTable_constructor_test )
 {
-    BOOST_REQUIRE_NO_THROW( RetirementCalc::LookupTable testLoad( "TestData\\retirement-data.json" ) );
+    BOOST_REQUIRE_NO_THROW( RetirementCalc::LookupTable testLoad( "TestData/retirement-data.json" ) );
 }
 
 BOOST_AUTO_TEST_CASE( LookupTable_constructor_failed_to_find_file )
 {
-    BOOST_REQUIRE_THROW( RetirementCalc::LookupTable testLoad( "" ), RetirementCalc::FileNotFound );
+    BOOST_REQUIRE_THROW( RetirementCalc::LookupTable testLoad( "" ),  RetirementCalc::FileNotFound );
+}
+
+BOOST_AUTO_TEST_CASE( LookupTable_constructor_failed_becaues_of_empty_file )
+{
+    BOOST_REQUIRE_THROW( RetirementCalc::LookupTable testLoad( "TestData/empty.json" ), RetirementCalc::FileEmpty );
 }
 
 /*Lookup method tests**********************************************************************************************/
@@ -46,7 +51,7 @@ BOOST_AUTO_TEST_CASE( LookupTable_Lookup_method_arg_error_test )
     const int GOOD_YEARLY_RETIREMENT_SAVINGS = 10000;
     const int GOOD_DESIRED_RETIREMENT_INCOME = 50000;
 
-    RetirementCalc::LookupTable testLoad( "TestData\\retirement-data.json" );
+    RetirementCalc::LookupTable testLoad( "TestData/retirement-data.json" );
 
     // CurrentAge
     // currentAge                  : Valid values int |     25 to        50 inclusive

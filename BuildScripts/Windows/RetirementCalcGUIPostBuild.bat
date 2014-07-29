@@ -50,4 +50,4 @@ if %_configName% == Debug (
 	@xcopy /q /y "%_QTDIR%\bin\libGLESv2d.dll" "%_OUTDIR%" > nul
 )
 
-xcopy /q /y /s "%_SOLUTIONDIR%TestData" "%_OUTDIR%"  
+xcopy /q /y /s "%_SOLUTIONDIR%TestData" "%_OUTDIR%\TestData\"  
